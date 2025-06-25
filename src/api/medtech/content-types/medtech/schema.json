@@ -1,0 +1,102 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medtechs",
+  "info": {
+    "singularName": "medtech",
+    "pluralName": "medtechs",
+    "displayName": "medtech"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tradition": {
+      "type": "enumeration",
+      "enum": [
+        "Buddhism",
+        "Yoga",
+        "Hinduism",
+        "Modern",
+        "Sufi",
+        "Zen",
+        "Taoist",
+        "Tibetan Buddhism",
+        "Vedic",
+        "Dzogchen",
+        "Tantra",
+        "MBSR",
+        "Osho",
+        "Various"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Mindfulness-Based",
+        "Concentration-Based",
+        "Compassion & Heart-Based",
+        "Mantra & Sound-Based",
+        "Breath-Based (Pranayama)",
+        "Visualization & Imagination",
+        "Active / Expressive Techniques",
+        "Body Awareness & Movement",
+        "Self-Inquiry & Non-Dual Awareness",
+        "Zen & Silent Sitting Traditions"
+      ]
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    "shortDescription": {
+      "type": "text"
+    },
+    "fullDescription": {
+      "type": "blocks"
+    },
+    "benefits": {
+      "type": "blocks"
+    },
+    "historicalOrigins": {
+      "type": "blocks"
+    },
+    "practiceInstructions": {
+      "type": "blocks"
+    },
+    "scientificResearch": {
+      "type": "blocks"
+    },
+    "videoUrl": {
+      "type": "string"
+    },
+    "commonChallenges": {
+      "type": "blocks"
+    },
+    "requirements": {
+      "type": "blocks"
+    },
+    "relatedTechniques": {
+      "type": "blocks"
+    },
+    "cautionsAndConsiderations": {
+      "type": "blocks"
+    },
+    "references": {
+      "type": "blocks"
+    },
+    "progressionAndDevelopment": {
+      "type": "blocks"
+    },
+    "integrationWithDailyLife": {
+      "type": "blocks"
+    }
+  }
+}
