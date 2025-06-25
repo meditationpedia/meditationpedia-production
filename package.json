@@ -16,6 +16,9 @@
     "heroku-prebuild": "npm rebuild"
   },
   "dependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-typescript": "^7.27.1",
     "@strapi/plugin-cloud": "5.16.0",
     "@strapi/plugin-users-permissions": "5.16.0",
     "@strapi/strapi": "5.16.0",
