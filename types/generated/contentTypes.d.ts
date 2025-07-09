@@ -387,16 +387,16 @@ export interface ApiMedtechMedtech extends Struct.CollectionTypeSchema {
     benefits: Schema.Attribute.Blocks;
     category: Schema.Attribute.Enumeration<
       [
-        'Mindfulness-Based',
-        'Concentration-Based',
-        'Compassion & Heart-Based',
-        'Mantra & Sound-Based',
-        'Breath-Based (Pranayama)',
-        'Visualization & Imagination',
-        'Active / Expressive Techniques',
-        'Body Awareness & Movement',
-        'Self-Inquiry & Non-Dual Awareness',
-        'Zen & Silent Sitting Traditions',
+        'Mindfulness',
+        'Concentration',
+        'Compassion',
+        'Mantra',
+        'Breath',
+        'Visualization',
+        'Movement',
+        'Body Awareness',
+        'Self-Inquiry',
+        'Zen',
       ]
     >;
     cautionsAndConsiderations: Schema.Attribute.Blocks;
