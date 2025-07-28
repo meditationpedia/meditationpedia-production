@@ -97,6 +97,35 @@
     },
     "integrationWithDailyLife": {
       "type": "blocks"
+    },
+    "interactiveDiagrams": {
+      "type": "blocks"
+    },
+    "progressTrackers": {
+      "type": "blocks"
+    },
+    "selfAssessment": {
+      "type": "blocks"
+    },
+    "practiceTimer": {
+      "type": "blocks"
+    },
+    "audioElements": {
+      "type": "blocks"
+    },
+    "visualAids": {
+      "type": "blocks"
+    },
+    "difficultyRating": {
+      "type": "enumeration",
+      "enum": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    "estimatedLearningTime": {
+      "type": "blocks"
     }
   }
 }

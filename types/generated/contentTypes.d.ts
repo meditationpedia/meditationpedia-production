@@ -384,6 +384,7 @@ export interface ApiMedtechMedtech extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    audioElements: Schema.Attribute.Blocks;
     benefits: Schema.Attribute.Blocks;
     category: Schema.Attribute.Enumeration<
       [
@@ -404,9 +405,14 @@ export interface ApiMedtechMedtech extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    difficultyRating: Schema.Attribute.Enumeration<
+      ['Beginner', 'Intermediate', 'Advanced']
+    >;
+    estimatedLearningTime: Schema.Attribute.Blocks;
     fullDescription: Schema.Attribute.Blocks;
     historicalOrigins: Schema.Attribute.Blocks;
     integrationWithDailyLife: Schema.Attribute.Blocks;
+    interactiveDiagrams: Schema.Attribute.Blocks;
     level: Schema.Attribute.Enumeration<
       ['Beginner', 'Intermediate', 'Advanced']
     >;
@@ -417,12 +423,15 @@ export interface ApiMedtechMedtech extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     practiceInstructions: Schema.Attribute.Blocks;
+    practiceTimer: Schema.Attribute.Blocks;
     progressionAndDevelopment: Schema.Attribute.Blocks;
+    progressTrackers: Schema.Attribute.Blocks;
     publishedAt: Schema.Attribute.DateTime;
     references: Schema.Attribute.Blocks;
     relatedTechniques: Schema.Attribute.Blocks;
     requirements: Schema.Attribute.Blocks;
     scientificResearch: Schema.Attribute.Blocks;
+    selfAssessment: Schema.Attribute.Blocks;
     shortDescription: Schema.Attribute.Text;
     title: Schema.Attribute.String;
     tradition: Schema.Attribute.Enumeration<
@@ -447,6 +456,7 @@ export interface ApiMedtechMedtech extends Struct.CollectionTypeSchema {
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     videoUrl: Schema.Attribute.String;
+    visualAids: Schema.Attribute.Blocks;
   };
 }
 
